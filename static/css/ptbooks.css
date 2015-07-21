@@ -6,11 +6,12 @@
          float:right;
          width:350px;
          margin:auto 2% auto auto;
+	}
 .content
 	{
         float:left;
         margin:auto 2% auto auto;
-                        }
+        }
 pre {
     background: #EEE none repeat scroll 0% 0%;
     border: 1px solid #C0C0C0;
