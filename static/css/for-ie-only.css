@@ -527,7 +527,7 @@ body {
 
 .header .logo {
     float: right;
-    /* width: 210px;*/
+    width: 210px;
     display: block;
     margin: 1.25em 1em;
 }

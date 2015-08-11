@@ -1,0 +1,4 @@
+# robots.txt for googlebot
+
+Sitemap: http://cxxtoolkit.github.io/book-test/sitemap_index.xml
+

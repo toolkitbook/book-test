@@ -1,9 +1,182 @@
-			<div class="wrap">
+<div class="header">
+	<div class="res_logo">
+		<h1 class="res_name">
+			<a href="http://www.ncbi.nlm.nih.gov/toolkit/" title="C++ Toolkit home">C++ Toolkit</a>
+		</h1>
+		<h2 class="res_tagline"/>
+	</div>
+	<div class="search">
+		<form method="get" action="/toolkitbook/">
+			<div class="search_form">
+				<label for="database" class="offscreen_noflow">Search database</label>
+				<select id="database">
+						<option value="toolkit">ToolKit</option>
+						<option value="toolkitbook">Book (old for now)</option>
+						<option value="toolkitall">ToolKitAll</option>
+				</select>
+				<div class="nowrap">
+					<label for="term" class="offscreen_noflow" accesskey="/">Search term</label>
+					<div class="nowrap">
+						<div class="jig-ncbiclearbutton-wrap box-shadow">
+							<input role="textbox" aria-autocomplete="list" aria-haspopup="true" name="term" id="term" title="Search ToolKitBook" class="jig-ncbiclearbutton jig-ncbiautocomplete" config="isEnabled:false,disableUrl:'NcbiSearchBarAutoComplCtrl'" autocomplete="off" data-sbconfig="ds:'no',pjs:'no',afs:'yes'" type="text"/>
+							<a style="visibility: hidden;" class="reset" href="#">
+								<img src="/book-test/default_files/clear.png" alt="Clear input"/>
+							</a>
+						</div>
+					</div>
+					<button id="search" type="submit" class="button_search nowrap" cmd="go">Search</button>
+				</div>
+			</div>
+			<input name="p$a" type="hidden"/>
+			<input name="p$l" value="PAFAppLayout" type="hidden"/>
+			<input name="p$st" value="toolkit" type="hidden"/>
+			<input name="SessionId" value="430737C9550C87A1_0084SID" disabled="disabled" type="hidden"/>
+			<input name="Snapshot" value="/projects/cppdocs/cppdocs@2.18" disabled="disabled" type="hidden"/>
+		</form>
+	</div>
+</div>
+	<div style="height: 1px; "> </div>
+	<div class="nvgtn">
+		<a aria-haspopup="true" aria-expanded="false" role="button" href="#__nav_cntnt" class="jig-ncbipopper" style="float:left; padding-left: 50px;">Contents ▾</a>
+		<div class="ui-helper-reset ui-ncbipopper-wrapper ui-ncbipopper-basic" aria-hidden="true" aria-live="assertive" style="width: 700px; height: 500px; overflow: auto; top: -100px; left: -100px; display: none;" id="__nav_cntnt">
+			<a class="right" href="../">Table of Contents Page</a>
+			<ul class="simple-list">
+				<li class="half_rhythm">
+					<a href="toolkit.fm">Book Information</a>
+				</li>
+				<li class="half_rhythm">
+					<a href="part1">Part 1. Overview</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_intro">1. Introduction to the C++ Toolkit</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_start">2. Getting Started</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part2">Part 2. Development Framework</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_getcode_svn">3. Retrieve the Source Code (FTP and Subversion)</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_config">4. Configure, Build, and Use the Toolkit</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_build">5. Working with Makefiles</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_proj">6. Project Creation and Management</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_style">7. Programming Policies and Guidelines</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part3">Part 3. C++ Toolkit Library Reference</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_core">8. Portability, Core Functionality and Application Framework</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_conn">9. Networking and IPC</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_dbapi">10. Database Access Support</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_cgi">11. CGI and Fast-CGI </a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_html">12. HTML</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_ser">13. Data Serialization (ASN.1, XML)</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_datamod">14. Biological Sequence Data Model</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_objmgr">15. Biological Object Manager</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_blast">16. BLAST API</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_dataaccess">17. Access to NCBI data</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_algoalign">18. Biological Sequence Alignment</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_gui">19. GUI and Graphics</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_boost">20. Using the Boost Unit Test Framework</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part4">Part 4. Wrappers for 3rd-Party Packages</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_xmlwrapp">21. XmlWrapp (XML parsing and handling, XSLT, XPath)</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part5">Part 5. Software</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_debug">22. Debugging, Exceptions, and Error Handling</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_grid">23. Distributed Computing</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_app">24. Applications</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_demo">25. Examples and Demos</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_res">26. C Toolkit Resources for C++ Toolkit Users</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part6">Part 6. Help and Support</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_browse">27. NCBI C++ Toolkit Source Browser</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_devtools">28. Software Development Tools</a>
+						</li>
+						<li class="half_rhythm">
+							<a href="ch_faq">29. FAQs, Useful Documentation Links, and Mailing Lists</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part7">Part 7. Library and Applications Configuration</a>
+					<ul class="simple-list">
+						<li class="half_rhythm">
+							<a href="ch_libconfig">30. Library Configuration</a>
+						</li>
+					</ul>
+				</li>
+				<li class="half_rhythm">
+					<a href="part8">Release Notes</a>
+				</li>
+				<li class="half_rhythm">
+					<a href="app1.appendix1">Appendix - Books and Styles</a>
+				</li>
+			</ul>
+		</div>
+		<div><a href="https://github.com/cxxtoolkit/book-test/edit/gh-pages/{{ page.path }}" style="float:right; padding-right: 50px;"><img src="/book-test/static/img/edit_button.gif"/></a></div>
+	</div>
 
-			<h1><a href="{{ site.github.url }}" target="_blank"><span>{{ page.organization-name }}</span> C++ Toolkit Book</a></h1>
-				
-            <a href="{{ page.organization-url }}" target="_blank">
-				<img class="logo" src="{{ site.baseurl }}/static/img/th-toolkit.png?raw=true" alt="{{ page.organization-name }} logo">
-            </a>
-          
-        	</div>

@@ -1,63 +1,176 @@
-﻿<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <title>C++ Toolkit documentation TEST - {{ page.organization-name }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/normalize.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/style.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/toolkit.css" />
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/ptbooks.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if IE]>
-    <link rel="stylesheet" href="{{ site.baseurl }}/static/css/for-ie-only.css">
-    <![endif]-->
-</head>
+<!--?xml version="1.0" encoding="utf-8"?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+        <!-- AppResources meta begin -->
+        <meta name="paf-app-resources" content="">
+        <!-- AppResources meta end -->
 
-<body class=" CppTkbPage">
-   
-                <div class="page">
-                    
+        <!-- TemplateResources meta begin -->
+        <meta name="paf_template" content="StdNCol">
 
-                    <!-- div class="header">
-                        SEARCH BAR / HEADER
-                    </div -->
-                    <header class="header cf" role="banner">
-                        {% include header.html %}
-                    </header>
-                    <!--/.header-->
+        <!-- TemplateResources meta end -->
 
-                    <!-- was itemctrl -->
-                    <div class="container">
-                                            
-                    <div id="tkb_internal" class="sidebar">{% include nav.html %}</div>
+        <!-- Page meta begin -->
+        
+        <!-- Page meta end -->
 
-                        <div id="maincontent" class="content">
-   
-                                <div class="content">
+        <!-- Logger begin -->
+        <meta xmlns:ncbi-portal="http://ncbi.gov/portal/XSLT/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="ncbi_app" content="cpptkb"><meta xmlns:ncbi-portal="http://ncbi.gov/portal/XSLT/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="ncbi_pdid" content="CppTkbPage">
+        <!-- Logger end -->
 
-                                        {{ content }}
- 
+        <title>Applications - The NCBI C++ Toolkit Book [Internet] - NCBI</title>
 
+        <!-- PageFixtures headcontent begin -->
+        
+
+        <!-- PageFixtures headcontent end -->
+
+        <!-- AppResources external_resources begin -->
+        <script type="text/javascript" src="/book-test/default_files/jig.js"></script><link rel="stylesheet" type="text/css" href="/book-test/default_files/jig.css"><script type="text/javascript" src="/book-test/default_files/jquery.js"></script><link type="text/css" rel="stylesheet" href="/book-test/default_files/jquery.css">
+
+        <!-- AppResources external_resources end -->
+
+        <!-- Page headcontent begin -->
+        <!--SOURCE-HEADCONTENT-->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="description" content="A comprehensive manual on the NCBI C++ toolkit, including its design and development framework, a C++ library reference, software examples and demos, FAQs and release notes."><meta name="robots" content="index,nofollow,noarchive"><meta name="page_id" content="ch_app"><meta name="page_type" content="chapter"><meta name="ncbipopper" content="triggerPosition:'bottom left',destPosition:'top left',openEvent:'click',closeEvent:'click'"><!--/SOURCE-HEADCONTENT-->
+
+        <!-- Page headcontent end -->
+        <!-- PageFixtures resources begin -->
+        <link xmlns="http://www.w3.org/1999/xhtml" type="text/css" rel="stylesheet" href="/book-test/default_files/3579733.css" xml:base="http://127.0.0.1/sites/static/header_footer"><link xmlns="http://www.w3.org/1999/xhtml" type="text/css" rel="stylesheet" href="/book-test/default_files/3529739.css" media="print" xml:base="http://127.0.0.1/sites/static/header_footer">
+
+        <!-- PageFixtures resources end -->
+    <link rel="shortcut icon" href="http://www.ncbi.nlm.nih.gov/favicon.ico"><meta name="ncbi_phid" content="396919165AEA08110000000000C8896F"><script type="text/javascript"><!--
+var ScriptUrl = 'http://www.ncbi.nlm.nih.gov/toolkit';
+var ScriptPath = '/portal/';
+var objHierarchy = {"name":"PAFAppLayout","type":"Layout","realname":"PAFAppLayout",
+"children":[{"name":"PAFAppLayout.AppController","type":"Cluster","realname":"PAFAppLayout.AppController",
+"children":[{"name":"PAFAppLayout.AppController.AppResources","type":"Portlet","realname":"PAFAppLayout.AppController.AppResources","shortname":"AppResources"},
+{"name":"PAFAppLayout.AppController.RequestProcessor","type":"Portlet","realname":"PAFAppLayout.AppController.RequestProcessor","shortname":"RequestProcessor"},
+{"name":"PAFAppLayout.AppController.Controller","type":"Cluster","realname":"PAFAppLayout.AppController.Controller",
+"children":[{"name":"PAFAppLayout.AppController.Controller.StaticXhtmlController","type":"Portlet","realname":"PAFAppLayout.AppController.Controller.StaticXhtmlController","shortname":"StaticXhtmlController"}]},
+{"name":"PAFAppLayout.AppController.Page","type":"Cluster","realname":"PAFAppLayout.AppController.Page",
+"children":[{"name":"PAFAppLayout.AppController.Page.PAFPageSelectorData","type":"Portlet","realname":"PAFAppLayout.AppController.Page.PAFPageSelector.PAFPageSelectorData","shortname":"PAFPageSelectorData"},
+{"name":"PAFAppLayout.AppController.Page.CppTkbPage","type":"Cluster","realname":"PAFAppLayout.AppController.Page.CppTkbPage",
+"children":[{"name":"PAFAppLayout.AppController.Page.CppTkbPage.MainPortlet","type":"Portlet","realname":"PAFAppLayout.AppController.Page.CppTkbPage.MainPortlet","shortname":"MainPortlet"}]}]},
+{"name":"PAFAppLayout.AppController.PageFixtures","type":"Cluster","realname":"PAFAppLayout.AppController.PageFixtures",
+"children":[{"name":"PAFAppLayout.AppController.PageFixtures.PageFixturesP","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.PageFixturesP","shortname":"PageFixturesP"},
+{"name":"PAFAppLayout.AppController.PageFixtures.SearchBar","type":"Cluster","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.SearchBar",
+"children":[{"name":"PAFAppLayout.AppController.PageFixtures.SearchBar.SearchBarChooser","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.SearchBar.SearchBarChooser","shortname":"SearchBarChooser"},
+{"name":"PAFAppLayout.AppController.PageFixtures.SearchBar.PAFSearchBar","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.SearchBar.PAFSearchBar","shortname":"PAFSearchBar"}]},
+{"name":"PAFAppLayout.AppController.PageFixtures.HeaderFooter","type":"Cluster","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.HeaderFooter",
+"children":[{"name":"PAFAppLayout.AppController.PageFixtures.HeaderFooter.NCBIBreadcrumbs","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.HeaderFooter.NCBIBreadcrumbs","shortname":"NCBIBreadcrumbs"},
+{"name":"PAFAppLayout.AppController.PageFixtures.HeaderFooter.NCBIHelpDesk","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.HeaderFooter.NCBIHelpDesk","shortname":"NCBIHelpDesk"},
+{"name":"PAFAppLayout.AppController.PageFixtures.HeaderFooter.NCBIApplog_NoScript_Ping","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.HeaderFooter.NCBIApplog_NoScript_Ping","shortname":"NCBIApplog_NoScript_Ping"}]},
+{"name":"PAFAppLayout.AppController.PageFixtures.LocalNavPortlet","type":"Portlet","realname":"PAFAppLayout.AppController.PageFixtures.PAFPageFixtures.LocalNavPortlet","shortname":"LocalNavPortlet"}]},
+{"name":"PAFAppLayout.AppController.TemplateResources","type":"Cluster","realname":"PAFAppLayout.AppController.TemplateResources",
+"children":[{"name":"PAFAppLayout.AppController.TemplateResources.StdNColResources","type":"Portlet","realname":"PAFAppLayout.AppController.TemplateResources.PAFTemplateResources.StdNColResources","shortname":"StdNColResources"}]},
+{"name":"PAFAppLayout.AppController.Logger","type":"Portlet","realname":"PAFAppLayout.AppController.Logger","shortname":"Logger"},
+{"name":"PAFAppLayout.AppController.DebugConsole","type":"Portlet","realname":"PAFAppLayout.AppController.DebugConsole","shortname":"DebugConsole"}]}]};
+--></script><link type="text/css" rel="stylesheet" href="/book-test/default_files/4005757.css"><link type="text/css" rel="stylesheet" href="/book-test/default_files/3529739_002.css" media="print"><script type="text/javascript">
+
+var ObjectLinks=[{i:0, ename: "p$ExL", esid:"*", sname: "p$ExL", ssid:"*", dname:"p$el", dsid:"0",m:"CopyValue",p:[],f: function(src, dst) {fn_CopyValue(src, dst);}}]
+
+
+var ActiveNames = {"p$ExL":1};
+</script><style media="print" type="text/css">.print-log { position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden; }.print-log li { list-style-image: url('/stat?jsevent=print&ncbi_app=cpptkb&ncbi_pdid=CppTkbPage&ncbi_phid=396919165AEA08110000000000C8896F'); }</style><style type="text/css">.print-log { position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden; }</style></head>
+    <body class=" CppTkbPage">
+        <div class="grid">
+            <div class="col twelve_col nomargin shadow">
+                <!-- System messages like service outage or JS required; this is handled by the TemplateResources portlet -->
+                <div class="sysmessages">
+                    <noscript>
+	<p class="nojs">
+	<strong>Warning:</strong>
+	The NCBI web site requires JavaScript to function. 
+	<a href="/guide/browsers/#enablejs" title="Learn how to enable JavaScript" target="_blank">more...</a>
+	</p>
+	</noscript>
+                </div>
+                <!--/.sysmessage-->
+                <div class="wrap">
+                    <div class="page">
+                        <!--/.header-->
+                        
+                    	{% include header.html %}                    
+                        
+                        <div class="nav_and_browser">
+    
+</div>
+                        
+                        <!-- was itemctrl -->
+                        <div class="container">
+                            <div id="maincontent" class="content">
+                                <div class="col1">
+                                    <div class="content"><div class="col eight_col">{{ content }}</div>
+
+
+  {% include sidebar.html %}
+
+
+</div>
 
                                 </div>
+                                <!--/.col1-->
+                                <div class="col2">
+                                    
+                                </div>
+                                <!--/.col2-->
+                                <div class="col3">
+                                    
+                                </div>
+                                <!--/.col3-->
+                                <div class="col4">
+                                    
+                                </div>
+                                <!--/.col4-->
+                                <div class="col5">
+                                    
+                                </div>
+                                <div class="col6">
+                                    
+                                </div>
+                                <div class="col7">
+                                    
+                                </div>
+                                <div class="col8">
+                                    
+                                </div>
+                                <div class="col9">
+                                    
+                                </div>
+                            </div><!--/.content-->
+                        </div><!--/.container-->
 
-                        </div><!--/.content-->
-                    </div><!--/.container-->
-                    
 
-                    <footer class="footer cf" role="contentinfo">
-                        <div class="wrap">
-                            {% include footer.html %}
-                        </div>
-                    </footer>
-                    <!--/.footer-->
-
+    <div xmlns="http://www.w3.org/1999/xhtml" class="footer" id="footer" xml:base="http://127.0.0.1/sites/static/header_footer">
+        {% include footer.html %}
+    </div>
+                        <!--/.footer-->
+                        
+                    </div>
+                    <!--/.page-->
                 </div>
-                <!--/.page-->
+                <!--/.wrap-->
+                <span class="PAFAppResources"></span>
+                
+                
+            </div><!-- /.twelve_col -->
+        <div style="display: none; top: 64.6px; left: 299.2px; width: 1116px; z-index: 1001;" class="ui-ncbiautocomplete-holder shadow ui-ncbiautocomplete-holder-clearfix" aria-live="assertive"><ul class="ui-ncbiautocomplete-options" role="listbox" aria-activedescendant="term"></ul><div style="display: block;" class="ui-ncbiautocomplete-actions shadow"><a style="display: none;" class="ui-ncbiautocomplete-link-pref">Preferences</a><a style="display: block;" href="#" class="ui-ncbiautocomplete-link-off ui-ncbiautocomplete-link-pref-right">Turn off</a></div></div><div class="ui-helper-reset ui-ncbipopper-wrapper ui-ncbipopper-basic" aria-hidden="true" aria-live="assertive" style="display: none; top: -100px; left: -100px;">External link. Please review our <a href="http://www.nlm.nih.gov/privacy.html">privacy policy</a>.</div></div>
+        <!-- /.grid -->
 
-</body>
-</html>
+        
+        
+        <!-- usually for JS scripts at page bottom -->
+        <span class="pagefixtures"></span>
+
+
+<script type="text/javascript" src="/book-test/default_files/portal.js"></script><script type="text/javascript" src="/book-test/default_files/4025445.js" snapshot="toolkit"></script>
+
+
+<div aria-labelledby="ui-dialog-title-citation-window" role="dialog" tabindex="-1" class="ui-dialog ui-widget ui-widget-content ui-corner-all" style="display: none; z-index: 1000; outline: 0px none;"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span id="ui-dialog-title-citation-window" class="ui-dialog-title">Cite this Page</span><a role="button" class="ui-dialog-titlebar-close ui-corner-all" href="#"><span class="ui-icon ui-icon-closethick">close</span></a></div><div class="jig-ncbidialog-box ui-dialog-content ui-widget-content" style="" id="citation-window"><div class="bk_tt">
+        Vakatov D, editor. The NCBI C++ Toolkit Book [Internet]. Bethesda (MD): National Center for Biotechnology Information (US); 2004-.  24, Applications
+                    . 
+        [Updated: March 17, 2015]
+    .
+
+                            <div class="bk_tt"><span class="bk_cite_avail">Available from: http://www.ncbi.nlm.nih.gov/toolkit/doc/book/ch_app</span></div></div><span class="bk_cite_avail"></span></div></div><ul class="print-log"><li></li></ul></body></html>

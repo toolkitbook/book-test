@@ -1,8 +1,0 @@
-      <p class="intro">Experiments from {{ page.organization-name }}</p>
-    <nav>    
-        <ul>
-          <li><a href="{{ site.baseurl }}/index.html" class="overview">Overview</a></li>
-          <li><a href="{{ site.baseurl }}/experiments.html" class="experiments">Experiments</a></li>
-          <li><a href="{{ site.baseurl }}/contribute.html" class="contribute">Contribute</a></li>
-        </ul>
-    </nav>
