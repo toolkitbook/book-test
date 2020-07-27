@@ -1,4 +1,6 @@
-# robots.txt for googlebot
+# Exclude technical page for inhouse only use from indexing
 
-Sitemap: http://cxxtoolkit.github.io/book-test/sitemap_index.xml
+User-agent: *
+Disallow: /pages/notes
 
+Sitemap: https://ncbi.github.io/cxx-toolkit/sitemap_000.xml
